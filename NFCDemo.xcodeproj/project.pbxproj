@@ -11,6 +11,7 @@
 		1212E7D82BF4B328004D24F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1212E7D72BF4B328004D24F6 /* ContentView.swift */; };
 		1212E7DA2BF4B32A004D24F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1212E7D92BF4B32A004D24F6 /* Assets.xcassets */; };
 		1212E7DD2BF4B32A004D24F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1212E7DC2BF4B32A004D24F6 /* Preview Assets.xcassets */; };
+		1212E7E52BF4B6AD004D24F6 /* NFCReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1212E7E42BF4B6AD004D24F6 /* NFCReader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		1212E7D72BF4B328004D24F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1212E7D92BF4B32A004D24F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1212E7DC2BF4B32A004D24F6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1212E7E32BF4B46C004D24F6 /* NFCDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NFCDemo.entitlements; sourceTree = "<group>"; };
+		1212E7E42BF4B6AD004D24F6 /* NFCReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCReader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +54,10 @@
 		1212E7D42BF4B328004D24F6 /* NFCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1212E7E32BF4B46C004D24F6 /* NFCDemo.entitlements */,
 				1212E7D52BF4B328004D24F6 /* NFCDemoApp.swift */,
 				1212E7D72BF4B328004D24F6 /* ContentView.swift */,
+				1212E7E42BF4B6AD004D24F6 /* NFCReader.swift */,
 				1212E7D92BF4B32A004D24F6 /* Assets.xcassets */,
 				1212E7DB2BF4B32A004D24F6 /* Preview Content */,
 			);
@@ -139,6 +144,7 @@
 			files = (
 				1212E7D82BF4B328004D24F6 /* ContentView.swift in Sources */,
 				1212E7D62BF4B328004D24F6 /* NFCDemoApp.swift in Sources */,
+				1212E7E52BF4B6AD004D24F6 /* NFCReader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,12 +275,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NFCDemo/NFCDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NFCDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = L7PBKVZL6R;
+				DEVELOPMENT_TEAM = ZFZ64J27N5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NFCDemo/Info.plist;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "Need NFC to scan";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -285,7 +294,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = hieutrungpham.NFCDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = pvcombank.com.vn.app.example.nfcreader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -298,12 +307,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NFCDemo/NFCDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NFCDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = L7PBKVZL6R;
+				DEVELOPMENT_TEAM = ZFZ64J27N5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NFCDemo/Info.plist;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "Need NFC to scan";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -314,7 +326,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = hieutrungpham.NFCDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = pvcombank.com.vn.app.example.nfcreader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
